@@ -1,0 +1,170 @@
+/* Dont't cahnge any thing on this file.  */
+
+
+/* adding font to the project */
+@font-face {
+    font-family: Monda;
+    src: url(../fonts/Monda-Regular.ttf);
+}
+@font-face {
+    font-family: Mohave_Regular;
+    src: url(../fonts/Mohave-Regular.otf);
+}
+@font-face {
+    font-family: Mohave_Medium;
+    src: url(../fonts/Mohave-Medium.otf);
+}
+
+
+/* change background color of body */
+body {
+    background-color:#E5E5E5;
+}
+
+
+/* style the bases of calculator */
+.calculator{
+    width:414px;
+    height:736px;
+    background-color: #241F56;
+    border-radius: 25px;
+    position: absolute;
+    margin-left: 38%;
+    margin-top:5%;
+}
+
+/* style of display container */
+.display{
+    position: relative;
+    border-radius: 25px;
+    width:100%;
+    height:280px;
+}
+
+/* style top display */
+.top_display{
+    width:85%;
+    float: right;
+    position: relative;
+    height:50px;
+    top:150px;
+    text-align: right;
+    font-size:35px;
+    color: rgba(165,142,214,0.5);
+    font-family: Monda;
+    margin-left: -30px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+/* style bottom display */
+.bottom_display{
+    width:85%;
+    float: right;
+    position: relative;
+    height:70px;
+    top:150px;
+    padding-top: -10px;
+    text-align: right;
+    font-size:50px;
+    color: rgba(158,156,176,1);
+    font-family: Monda;
+    margin-left: -30px;
+    margin-right: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+/* style the cover of buttons */
+.buttons{
+    position: flex;
+    flex-direction: row;
+    width:100%;
+    height:456px;
+    background-color:#fff;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius:25px ;
+    box-shadow:0 0 20 25 13%;
+}
+
+/* display drag button */
+.drag_button{
+    position: relative;
+    background-color:#241F56;
+    border-color: #5D26D2;
+    border-width: 1px;
+    height:10px;
+    width:108px;
+    border-radius: 30px;
+    left:150px;
+    top: 10px;
+}
+
+/* style buttons holder */
+buttons_holder{
+    position: relative;
+    width:100%;
+    height:100%;
+    align-items: center;
+}
+
+/* style each button */
+.button{
+    position: relative;
+    background-color:#4F469C;
+    color: #fff;
+    margin:16px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius:12px ;
+    font-family: Mohave_Regular;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    display: inline;
+    width:60px;
+    height:57px;
+    box-shadow: 0 0 4 2 25% ;
+}
+
+/* get a more top margin to the top button */
+.top{
+    margin-top:22px;
+}
+
+/* style zero defferently */
+.zero{
+    padding-left: 20px;
+    text-align:start;
+    width:161px
+}
+
+/* style the aside buttons diffrently */
+.aside{
+    color:#4F469C ;
+    background-color:#D8A7D3;
+    font-family: Mohave_Medium;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* change background color when hover to the button beside aside buttons */
+button:hover,button:focus{
+    background-color:#fff;
+    color: #4F469C;
+    font-weight: bolder;
+    outline: none; 
+}
+
+/* change background color when hover to the button just aside buttons */
+.aside:hover{
+    background-color:#4F469C;
+    color: #D8A7D3;
+    font-weight: bolder;
+}

@@ -1,0 +1,45 @@
+<!-- This is simple calculator that you should write the html tag's -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="icon" href="../assets/icons/keys.svg" />
+    <link rel="stylesheet" href="../assets/styles/calculator.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="top_display"></div>
+        <div class="bottom_display"></div>
+      </div>
+      <div class="buttons">
+        <div class="drag_button"></div>
+        <div class="buttons_holder">
+          <button onclick="clear_display()" class="button aside top">C</button>
+          <button onclick="calculate(this)" class="button aside">()</button>
+          <button onclick="calculate(this)" class="button aside">%</button>
+          <button onclick="calculate(this)" class="button aside">÷</button>
+          <button onclick="calculate(this)" class="button">7</button>
+          <button onclick="calculate(this)" class="button">8</button>
+          <button onclick="calculate(this)" class="button">9</button>
+          <button onclick="calculate(this)" class="button aside">×</button>
+          <button onclick="calculate(this)" class="button">4</button>
+          <button onclick="calculate(this)" class="button">5</button>
+          <button onclick="calculate(this)" class="button">6</button>
+          <button onclick="calculate(this)" class="button aside">-</button>
+          <button onclick="calculate(this)" class="button">1</button>
+          <button onclick="calculate(this)" class="button">2</button>
+          <button onclick="calculate(this)" class="button">3</button>
+          <button onclick="calculate(this)" class="button aside">+</button>
+          <button onclick="calculate(this)" class="button zero">0</button>
+          <button onclick="calculate(this)" class="button">.</button>
+          <button onclick="result()" class="button aside">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="../src/functiom.js"></script>
+  </body>
+</html>
